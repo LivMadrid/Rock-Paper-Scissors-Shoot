@@ -28,29 +28,41 @@ def get_computer_choice():
     choice = Choice(computer_choice)
     return choice 
 
+# def rock_paper_scissors_shoot(player_choice, computer_choice):
+
+#     if player_choice == computer_choice:
+#         print(f'You AND computer chose {player_choice.name} it is a TIE. Try again.')
+#     elif player_choice == Choice.rock:
+#         if computer_choice == Choice.scissors:
+#             print('Rock slams scissors. YOU WIN!')
+#         else: 
+#             print('Paper engulfs rock. YOU LOSE!')
+#     elif player_choice == Choice.paper:
+#         if computer_choice == Choice.rock:
+#             print('Paper engulfs rock. YOU WIN!')
+#         else: 
+#             print('Scissors slice paper. YOU LOSE!')
+#     elif player_choice == Choice.scissors:
+#         if computer_choice == Choice.paper:
+#             print('Scissors slice paper. YOU WIN')
+#         else: 
+#             print('Rock slams scissors. YOU LOSE!')
+
+
+###################Instead of above code you can simply with dictionaries key-value pair relationships. key = choice value = list of other choices it thwarts#######################
 def rock_paper_scissors_shoot(player_choice, computer_choice):
-
+    wins = {
+        Choice.rock: [Choice.scissors], # Rock slams scissors
+        Choice.paper: [Choice.rock], #Paper engulfs rock
+        Choice.scissors: [Choice.paper] #Scissors slice paper 
+    }
+    loses = wins[player_choice]
     if player_choice == computer_choice:
-        print(f'You AND computer chose {player_choice.name} it is a TIE. Try again.')
-    elif player_choice == Choice.rock:
-        if computer_choice == Choice.scissors:
-            print('Rock slams scissors. YOU WIN!')
-        else: 
-            print('Paper engulfs rock. YOU LOSE!')
-    elif player_choice == Choice.paper:
-        if computer_choice == Choice.rock:
-            print('Paper engulfs rock. YOU WIN!')
-        else: 
-            print('Scissors slice paper. YOU LOSE!')
-    elif player_choice == Choice.scissors:
-        if computer_choice == Choice.paper:
-            print('Scissors slice paper. YOU WIN')
-        else: 
-            print('Rock slams scissors. YOU LOSE!')
-
-
-
-
+        print(f'You AND computer chose {player_choice.name}. It is a TIE. Try again.')
+    elif computer_choice in loses:
+        print(f'{player_choice.name} thwacks {computer_choice.name}: YOU WIN!')
+    else:
+        print(f'{computer_choice.name} thwacks {player_choice.name}: YOU LOSE! Better luck next time!')
 
 
 while True:
