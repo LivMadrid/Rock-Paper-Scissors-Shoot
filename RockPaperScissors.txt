@@ -1,0 +1,7 @@
+FLOW CHART 
+
+GET USER CHOICE ----> IS THIS A VALID CHOICE? YES ---> GET 'RANDOM' COMPUTER CHOICE ---> COMPARE AND FIND WINNER/LOSER ---> PLAY ANOTHER ROUND? ---> NO --> END GAME 
+                <------ NO RETURN TO CHOICE PROMPT                                                            |                                                               
+                                                                                                    |
+                                                                                                    \/ 
+                                                                                                    YES: START AT USER CHOICE
