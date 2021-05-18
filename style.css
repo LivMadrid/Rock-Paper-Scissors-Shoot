@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(211, 147, 241);
+}
+
+header {
+    background: rgb(184, 255, 255);
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(0, 0, 0) ;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Monoton', cursive;
+} 
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid  rgb(184, 255, 255);
+    border-radius: 4px;
+    text-align: center;
+    width: 400px;
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+    padding: 15px 20px;
+    position: relative;
+
+}
+
+.badge {
+    background: rgb(211, 147, 241);
+    font-size: 20px;
+    padding: 2px 10px;
+    font-family: 'Monoton', cursive;
+}
+
+#player-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label {
+    position:absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.result {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.result > p {
+    text-align: center;
+    font-family: 'Monoton', cursive;
+}
+
+.choices{
+    margin: 50px 0px;
+    text-align: center;
+    
+}
+.choice {
+    border: 4px solid  rgb(184, 255, 255);
+    border-radius: 50%;
+    margin: 0px 20px;
+    padding: 40px ;
+    display: inline-block;
+
+}
+
+.choice:hover{
+    cursor:pointer;
+    background: rgb(184, 255, 255);
+}
