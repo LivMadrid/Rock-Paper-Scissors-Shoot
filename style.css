@@ -55,7 +55,7 @@ h1 {
 }
 
 .result {
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(0, 0, 0);
 }
 
@@ -65,7 +65,7 @@ h1 {
 }
 
 .choices{
-    margin: 50px 0px;
+    margin-top: 50px 0px;
     text-align: center;
     
 }
@@ -75,10 +75,20 @@ h1 {
     margin: 0px 20px;
     padding: 40px ;
     display: inline-block;
+    transition: all 0.3s ease;
 
 }
 
 .choice:hover{
     cursor:pointer;
     background: rgb(184, 255, 255);
+}
+
+#action-message {
+    margin: 20px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-family: 'Monoton', cursive;
+    font-weight: bold;
+    font-size: 40px;
 }
