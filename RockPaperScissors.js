@@ -24,22 +24,22 @@ function win(playerChoice, computerChoice) {
     playerScore++;
     playerScore_span.innerHTML = playerScore;
     computerScore_span.innerHTML = computerScore;
-    const smallPlayerWord = 'player'.fontsize(3).sup();
-    const smallCompWord = 'computer'.fontsize(3).sup();
-    result_p.innerHTML = `${smallPlayerWord} ${convertToWord(playerChoice)} smashes  ${smallCompWord} ${convertToWord(computerChoice)}  YOU WIN! ` ;
+    const smallPlayerWord = 'player'.fontsize(20);
+    const smallCompWord = 'computer'.fontsize(20);
+    result_p.innerHTML = ` ${convertToWord(playerChoice)} skunks  ${convertToWord(computerChoice)}! \ YOU WIN! ` ;
 }
 function lose(playerChoice, computerChoice) {
     computerScore++;
     playerScore_span.innerHTML = playerScore;
     computerScore_span.innerHTML = computerScore;
-    const smallPlayerWord = 'player'.fontsize(3).sup();
-    const smallCompWord = 'computer'.fontsize(3).sup();
-    result_p.innerHTML = `${smallPlayerWord} ${convertToWord(playerChoice)} loses to  ${smallCompWord} ${convertToWord(computerChoice)}  YOU LOSE... ` ;
+    const smallPlayerWord = 'player'.fontsize(20);
+    const smallCompWord = 'computer'.fontsize(20);
+    result_p.innerHTML = `${convertToWord(playerChoice)} loses to ${convertToWord(computerChoice)}!  YOU LOSE... ` ;
 }
 function tie(playerChoice, computerChoice) {
-    const smallPlayerWord = 'player'.fontsize(3).sup();
-    const smallCompWord = 'computer'.fontsize(3).sup();
-    result_p.innerHTML = `${smallPlayerWord} ${convertToWord(playerChoice)} ties with  ${smallCompWord} ${convertToWord(computerChoice)}  TIE: TRY AGAIN ` ;
+    const smallPlayerWord = 'player'.fontsize(3);
+    const smallCompWord = 'computer'.fontsize(3);
+    result_p.innerHTML = `${convertToWord(playerChoice)} ties with  ${convertToWord(computerChoice)}! A TIE! TRY AGAIN! ` ;
 }
 
 function getPlayerChoice(playerChoice) {

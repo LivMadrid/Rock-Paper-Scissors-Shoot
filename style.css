@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=Rubik+Mono+One&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -15,19 +16,21 @@ header {
     padding: 20px;
 }
 
+
+
 h1 {
     color: rgb(0, 0, 0) ;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     font-family:'Monoton', cursive;
 } 
 
 .score-board {
-    margin: 20px auto;
+    margin: 40px auto;
     border: 3px solid  rgb(184, 255, 255);
     border-radius: 4px;
     text-align: center;
-    width: 400px;
+    width: 600px;
     font-size: 40px;
     font-family: 'Monoton', cursive;
     padding: 15px 20px;
@@ -61,7 +64,7 @@ h1 {
 
 .result > p {
     text-align: center;
-    font-family: 'Monoton', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
 .choices{
@@ -92,3 +95,18 @@ h1 {
     font-weight: bold;
     font-size: 40px;
 }
+/* 
+.green-glow {
+    border: 4px solid  rgb(0, 255, 34);
+    box-shadow: 0 0 10px  rgb(74, 255, 15) ;
+}
+.red-glow {
+    border: 4px solid  rgb(253, 0, 0);
+    box-shadow: 0 0 10px  rgb(139, 4, 4); 
+}
+.yellow-glow {
+    border: 4px solid  rgb(255, 251, 0);
+    box-shadow: 0 0 10px  rgb(187, 184, 4);
+} */
+/* 
+<!-- "https://icons8.com/icon/41458/hand-rock">Hand Rock icon by Icons8 --> */
